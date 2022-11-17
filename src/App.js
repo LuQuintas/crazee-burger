@@ -1,31 +1,14 @@
-import { useState } from 'react';
+import { LoginPage } from './components/pages/LoginPage';
 
 function App() {
   //states (états,données)
-  const [prenom, setPrenom] = useState('');
 
-  //comportements
-  const handleChange = (e) => {
-    const afterChange = e.target.value;
-    setPrenom(afterChange);
-  };
-  const handleClick = () => {
-    alert('Bonjour' + '' + prenom);
-  };
+  //comportememnts
+
   // affichage (render)
   return (
     <div>
-      <h1>Bienvenue chez nous !</h1>
-      <h2>Connectez-vous</h2>
-      <form action="">
-        <input
-          type="text"
-          value={prenom}
-          onChange={handleChange}
-          placeholder="Entrez votre prénom"
-        />
-        <button onClick={handleClick}> Accéder à votre espace</button>
-      </form>
+      <LoginPage />
     </div>
   );
 }
