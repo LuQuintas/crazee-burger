@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 export default function LoginForm() {
   // state(etats,données)
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
 
   //comportements
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(`Bonjour ${inputValue}`);
-    setInputValue('');
+    setInputValue("");
   };
 
   const handleChange = (e) => {
