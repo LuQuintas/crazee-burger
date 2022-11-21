@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   // state(etats,données)
@@ -29,6 +30,7 @@ export default function LoginForm() {
         required
       />
       <button>Accedez àvotre espace</button>
+      <Link to="/order">Vers OrderPage</Link>
     </form>
   );
 }
